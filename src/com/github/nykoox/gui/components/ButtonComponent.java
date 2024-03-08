@@ -9,6 +9,7 @@ import java.awt.event.MouseEvent;
 import static com.github.nykoox.gui.consts.*;
 
 public class ButtonComponent extends JButton {
+    private Graphics2D g2d;
     public ButtonComponent(String text) {
         super(text);
         setContentAreaFilled(false);
@@ -17,12 +18,13 @@ public class ButtonComponent extends JButton {
         setOpaque(false);
         setForeground(FOREGROUND);
 
+        this.setFont(new Font("Inter", Font.BOLD, 24));
+
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
                 setBackground(PRIMARY_HOVER);
-                // o mesmo que branco com 60% de opacidade (60% de 255)
-                setForeground(new Color(255, 255, 255, 103));
+                setForeground(Color.decode("#4d7c0f"));
             }
 
             @Override
@@ -36,7 +38,7 @@ public class ButtonComponent extends JButton {
 
     @Override
     protected void paintComponent(Graphics g) {
-        Graphics2D g2d = (Graphics2D) g.create();
+        g2d = (Graphics2D) g.create();
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         int width = getWidth();
