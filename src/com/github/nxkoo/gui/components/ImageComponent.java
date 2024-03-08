@@ -1,4 +1,4 @@
-package com.github.nykoox.gui.components;
+package com.github.nxkoo.gui.components;
 
 import javax.swing.*;
 import java.net.URL;

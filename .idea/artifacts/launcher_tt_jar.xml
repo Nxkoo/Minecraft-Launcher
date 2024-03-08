@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="launcher-tt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/launcher_tt_jar</output-path>
+    <root id="archive" name="launcher-tt.jar">
+      <element id="module-output" name="launcher-tt" />
+    </root>
+  </artifact>
+</component>

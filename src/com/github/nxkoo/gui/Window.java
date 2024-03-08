@@ -1,6 +1,6 @@
-package com.github.nykoox.gui;
+package com.github.nxkoo.gui;
 
-import com.github.nykoox.gui.panels.MainPanel;
+import com.github.nxkoo.gui.panels.MainPanel;
 import com.sun.awt.AWTUtilities;
 
 import javax.swing.*;

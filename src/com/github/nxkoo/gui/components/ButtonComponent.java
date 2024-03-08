@@ -1,4 +1,7 @@
-package com.github.nykoox.gui.components;
+package com.github.nxkoo.gui.components;
+
+import com.github.nxkoo.gui.components.handlers.HandlerAction;
+import com.github.nxkoo.gui.components.handlers.IHoverHandler;
 
 import javax.swing.*;
 
@@ -6,7 +9,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import static com.github.nykoox.gui.consts.*;
+import static com.github.nxkoo.gui.consts.*;
 
 public class ButtonComponent extends JButton {
     private Graphics2D g2d;
@@ -20,16 +23,16 @@ public class ButtonComponent extends JButton {
 
         this.setFont(new Font("Inter", Font.BOLD, 24));
 
-        addMouseListener(new MouseAdapter() {
+        HandlerAction action = new HandlerAction(this);
+        action.addHoverListener(new IHoverHandler() {
             @Override
-            public void mouseEntered(MouseEvent e) {
+            public void onHover() {
                 setBackground(PRIMARY_HOVER);
                 setForeground(Color.decode("#4d7c0f"));
             }
 
             @Override
-            public void mouseExited(MouseEvent e) {
-                // voltar ao normal
+            public void onExitHover() {
                 setBackground(PRIMARY);
                 setForeground(FOREGROUND);
             }

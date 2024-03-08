@@ -1,6 +1,6 @@
-package com.github.nykoox.gui.layout;
+package com.github.nxkoo.gui.layout;
 
-import com.github.nykoox.gui.components.ImageComponent;
+import com.github.nxkoo.gui.components.ImageComponent;
 
 import javax.swing.*;
 import java.awt.*;

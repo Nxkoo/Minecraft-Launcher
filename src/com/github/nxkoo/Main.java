@@ -1,6 +1,6 @@
-package com.github.nykoox;
+package com.github.nxkoo;
 
-import com.github.nykoox.gui.Window;
+import com.github.nxkoo.gui.Window;
 
 import javax.swing.*;
 
