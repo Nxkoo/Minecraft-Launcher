@@ -2,6 +2,8 @@
 
 Este é um projeto de **Minecraft Launcher** que foi desenvolvido ao vivo na Twitch! O launcher é construído em **Java 8** e utiliza a biblioteca **Java Swing** para a interface gráfica.
 
+![image](https://github.com/Nxkoo/Minecraft-Launcher/assets/156827901/60b4835d-de31-4ff4-878f-6cd5f88803b4)
+
 ## Funcionalidades
 
 - **Em andamento...**: tudo será construido ao vivo.
